@@ -1,0 +1,28 @@
+<odoo>
+  <record id="train_station_form_view" model="ir.ui.view">
+    <field name="name">train.station.form</field>
+    <field name="model">train.station</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="city"/>
+          <field name="address"/>
+        </group>
+      </form>
+    </field>
+  </record>
+
+  <record id="train_station_tree_view" model="ir.ui.view">
+    <field name="name">train.station.tree</field>
+    <field name="model">train.station</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="code"/>
+        <field name="name"/>
+        <field name="city"/>
+      </tree>
+    </field>
+  </record>
+</odoo>
